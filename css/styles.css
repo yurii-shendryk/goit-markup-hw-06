@@ -229,21 +229,23 @@ margin-right: 10px;
   text-transform: uppercase;
 }
 
-.hero-button {
+.button {
   min-width: 200px;
-  padding: 10px 32px;
   border: 0;
-  border-radius: 4px;
-  outline: none;
   font-size: 16px;
   font-weight: 700;
   color: var(--main-color);
   line-height: 1.875;
   letter-spacing: 0.06em;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
   background-color: var(--active-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+.hero-button {
+  padding: 10px 32px;
 }
 
 .features {
@@ -566,12 +568,13 @@ padding-bottom: 94px;
 
   color: var(--main-color);
   background-color: var(--footer-bg-color);
-  font-size: 0;
+  
 }
 
 .page-footer > .container {
  display: flex;
  align-items: flex-start;
+ justify-content: center;
 }
 
 .footer-contacts {
@@ -603,6 +606,9 @@ padding-bottom: 94px;
   opacity: 0.6;
 }
 
+.join {
+margin-right: 93px;
+}
 
 .join-text {
 display: block;
@@ -623,6 +629,43 @@ color: var(--main-color);
 }
 
 .join-link > .social-link-icon {
+  fill: var(--main-color);
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-input {
+  width: 358px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+  background-color: var(--footer-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.footer-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
   fill: var(--main-color);
 }
 
@@ -679,16 +722,16 @@ color: var(--main-color);
   border-radius: 50%;
   border-color: var(--main-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 300ms linear;
+  background-color: var(--main-color);
+  transition: fill 250ms linear;
 }
 
-
 .btn-close:hover {
-background-color: rgba(239, 45, 61, 0.756);
-} 
+  cursor: pointer;
+}
 
 .btn-close:hover .close-icon{
-  fill: var(--main-color);
+  fill: var(--active-color);
 }
 
 .close-icon {
@@ -698,6 +741,21 @@ background-color: rgba(239, 45, 61, 0.756);
   transition: fill 300ms linear;
 }
 
+.modal-text {
+  position: absolute;
+  top: 40px;
+  left: 41px;
+  right: 39px;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--titles-color);
+}
+
+.modal-textarea {
+  resize: none;
+  width: 448px;
+}
+/* Закінчив тут, доробити розмітку форми в модалці*/
 
 
 /*стили отдельных елементов страници portfolio.html*/

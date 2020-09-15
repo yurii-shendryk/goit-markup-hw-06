@@ -55,7 +55,7 @@
          <section class="hero">
                 <div class="container">
                         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                        <button type="submit" name="order-service" value="Заказать услугу" class="hero-button" data-modal-open>Заказать услугу</button>
+                        <button type="submit" name="order-service" value="Заказать услугу" class="button hero-button" data-modal-open>Заказать услугу</button>
                 </div>
         </section>
         <!--Преимущества-->
@@ -335,7 +335,7 @@
                                 <a  href="tel:+380961111111" class="footer-contacts-link">+38 096 111 11 11</a>
                         </address>
                    </div>     
-                        <div>                   
+                        <div class="join">                   
                            <b class="join-text">Присоединяйтесь</b>
                            <ul class="social-list">
                                 <li class="social-item">
@@ -368,6 +368,24 @@
                                 </li>
                            </ul>    
                         </div>
+                        <div>                
+                                <b class="join-text">Подпишитесь на рассылку</b>               
+                                        <form class="footer-form">
+                                                
+                                                <label>
+                                                <input type="email" name="email" placeholder="E-mail" class="footer-input">
+                                                </label>
+                                                <button type="submit" class="button footer-button">
+                                                        Подписаться
+                                                        <svg class="icon-send">
+                                                                <use href="./img/symbol-defs.svg#icon-send"></use>
+                                                        </svg>
+                                                </button>
+                                        </form>
+                                        
+                                
+
+                        </div>
                 </div>         
        </footer>
        <div class="backdrop is-hidden" data-modal>
@@ -377,6 +395,19 @@
                                         <use href="./img/symbol-defs.svg#close-btn"></use>
                                 </svg>                
                        </button>
+                       
+                       <form class="modal-form">
+                        <b class="modal-text">Оставте свои данные, мы вам перезвоним</b>
+                        <label for="name">Имя</label>
+                                <input type="text" name="name" id="name" placeholder="">
+                        <label for="telephone">Телефон</label>
+                                <input type="tel" name="telephone" id="telephone" placeholder="">
+                        <label for="mail">Почта</label>
+                                <input type="email" name="mail" id="mail" placeholder="">
+                        <label for="comment">Комментарий</label>
+                        <!-- закінчив тут -->
+                                <textarea name="comment" id="comment" class="modal-textarea" placeholder="Введите коментарий"></textarea>
+                       </form>
                </div>
        </div>
        <script src="./js/modal.js"></script>
