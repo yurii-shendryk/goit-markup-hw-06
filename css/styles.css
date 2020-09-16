@@ -11,7 +11,7 @@
   --hero-bg-color: #C4C4C4;
   --overlay: rgba(47, 48, 58, 0.4);
   --fill-icon-color: #AFB1B8;
-
+  --btn-send-color: #188CE8;
   --timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -684,8 +684,12 @@ color: var(--main-color);
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   overflow: auto;
+  
 }
 
+.backdrop .modal {
+  padding: 40px 39px 40px 41px;
+}
 
 .is-hidden .modal{
   top: -100%;
@@ -742,21 +746,77 @@ color: var(--main-color);
 }
 
 .modal-text {
-  position: absolute;
-  top: 40px;
-  left: 41px;
-  right: 39px;
-  font-size: 20px;
-  line-height: 1.15;
-  color: var(--titles-color);
+display: block;
+text-align: center;
+margin-bottom: 12px;
+
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+color: var(--titles-color);
+letter-spacing: 0.03em;
+}
+
+.modal-form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
 
 .modal-textarea {
   resize: none;
   width: 448px;
 }
-/* Закінчив тут, доробити розмітку форми в модалці*/
 
+.btn-send {
+  padding: 10px 55px 10px 56px;
+  background-color: var(--btn-send-color);
+}
+/* Закінчив тут, доробити розмітку форми в модалці*/
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field-label {
+  margin-bottom: 4px;
+  color: var(--description-header-link-color);  
+  letter-spacing: 0.01em;
+}
+.form-field-input {
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+}
+
+.form-field-textarea {
+resize: none;
+}
+
+.form-field-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+
+}
+/* Закынчив на оформленны placeholder */
+
+.checkbox-label {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.714;
+  color: var(--description-header-link-color);
+}
+
+.checkbox-label a {
+  color: var(--active-color);
+}
 
 /*стили отдельных елементов страници portfolio.html*/
 .progects-type-title,
