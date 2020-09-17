@@ -397,43 +397,46 @@
                                 <div class="form-field">
                                         <label for="name" class="form-field-label">Имя</label>
                                         <div class="form-input-wrap">
+                                                <input type="text" name="name" id="name" class="form-field-input" placeholder=" " pattern="^[a-zA-ZА-Яа-яЁёї'іє\s]+$" autocomplete="off"  required>
                                                 <svg class= "form-field-icon">
                                                         <use href="./img/symbol-defs.svg#icon-name">
                                                 </svg>
-                                                <input type="text" name="name" id="name" placeholder="" class="form-field-input">
                                         
                                 </div>
                                 </div>
                                 <div class="form-field">
                                         <label for="telephone" class="form-field-label">Телефон</label>
                                         <div class="form-input-wrap">
+                                                <input type="tel" name="telephone" id="telephone" class="form-field-input" placeholder=" " pattern="[0-9]{10,12}" autocomplete="off" required>
                                                 <svg class= "form-field-icon">
                                                         <use href="./img/symbol-defs.svg#icon-tel">
                                                 </svg>
-                                                <input type="tel" name="telephone" id="telephone" placeholder="" class="form-field-input">
                                         </div>
                                 </div>
                                 <div class="form-field">
                                         <label for="mail" class="form-field-label">Почта</label>
                                         <div class="form-input-wrap">
+                                                <input type="email" name="mail" id="mail" class="form-field-input" placeholder=" " autocomplete="off" required>
                                                 <svg class= "form-field-icon">
                                                         <use href="./img/symbol-defs.svg#icon-mail">
                                                 </svg>
-                                                <input type="email" name="mail" id="mail" placeholder="" class="form-field-input">
                                         </div>
                                 </div>
                                 <div class="form-field">
                                         <label for="comment" class="form-field-label">Комментарий</label>
                                         <textarea name="comment" id="comment" rows="6" placeholder="Введите коментарий" class="form-field-textarea"></textarea>
                                 </div>
-                                        <label for="checkbox" class="checkbox-label">
-                                        <input type="checkbox" class="checkbox visually-hidden" id="checkbox" checked />
-                                        <span>Соглашаюсь с рассылкой и принимаю </span>
-                                        <a href="" class="link">Условия договора</a>
-                                        </label>
-                        
+                                        <div class="checkbox-wrap">
+                                        <label class="checkbox-label">
+                                                <input type="checkbox" class="checkbox">
+                                                <span>Соглашаюсь с рассылкой и принимаю </span>
+                                                <a href="" class="link">Условия договора</a>
+                                                </label>
+                                        </div>
+                                        
                                 
-                                <button type="submit" class="button btn-send">Отправить</button>
+                                
+                                <button type="submit" class="button btn-submit">Отправить</button>
                        </form>
                </div>
        </div>
