@@ -771,6 +771,7 @@ letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
 
+
 .form-field-label {
   font-size: 12px;
   line-height: 1.167;
@@ -778,11 +779,28 @@ letter-spacing: 0.03em;
   color: var(--description-header-link-color);  
   letter-spacing: 0.01em;
 }
+
+.form-input-wrap {
+  position: relative;
+}
+
+.form-field-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  fill: var(--titles-color);
+}
+
+
 .form-field-input {
+  width: 100%;
   margin: 0;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 14px;
+  padding-left: 42px;
   border: 1px solid var(--modal-input-border);
   border-radius: 4px;
 }
