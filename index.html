@@ -370,11 +370,8 @@
                         </div>
                         <div>                
                                 <b class="join-text">Подпишитесь на рассылку</b>               
-                                        <form class="footer-form">
-                                                
-                                                <label>
+                                        <form action="" class="footer-form" id="subscribe-form">
                                                 <input type="email" name="email" placeholder="E-mail" class="footer-input">
-                                                </label>
                                                 <button type="submit" class="button footer-button">
                                                         Подписаться
                                                         <svg class="icon-send">
@@ -396,7 +393,7 @@
                                 </svg>                
                        </button>
                        <b class="modal-text">Оставте свои данные, мы вам перезвоним</b>
-                       <form class="modal-form">
+                       <form action="" class="modal-form" id="contact-form">
                                 <div class="form-field">
                                         <label for="name" class="form-field-label">Имя</label>
                                         <input type="text" name="name" id="name" placeholder="" class="form-field-input">
@@ -411,13 +408,15 @@
                                 </div>
                                 <div class="form-field">
                                         <label for="comment" class="form-field-label">Комментарий</label>
-                                        <textarea name="comment" id="comment" class="modal-textarea" rows="6" placeholder="Введите коментарий" class="form-field-textarea"></textarea>
+                                        <textarea name="comment" id="comment" rows="6" placeholder="Введите коментарий" class="form-field-textarea"></textarea>
                                 </div>
-                                <label for="checkbox" class="checkbox-label">
-                                <input type="checkbox" class="checkbox visually-hidden" id="checkbox" checked />
-                                <span>Соглашаюсь с рассылкой и принимаю </span>
-                                <a href="" class="link">Условия договора</a>
-                                </label>
+                                        <label for="checkbox" class="checkbox-label">
+                                        <input type="checkbox" class="checkbox visually-hidden" id="checkbox" checked />
+                                        <span>Соглашаюсь с рассылкой и принимаю </span>
+                                        <a href="" class="link">Условия договора</a>
+                                        </label>
+                        
+                                
                                 <button type="submit" class="button btn-send">Отправить</button>
                        </form>
                </div>
