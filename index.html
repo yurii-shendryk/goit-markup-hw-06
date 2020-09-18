@@ -393,7 +393,7 @@
                                 </svg>                
                        </button>
                        <b class="modal-text">Оставте свои данные, мы вам перезвоним</b>
-                       <form action="" class="modal-form" id="contact-form">
+                       <form action="" class="modal-form" id="modal-form">
                                 <div class="form-field">
                                         <label for="name" class="form-field-label">Имя</label>
                                         <div class="form-input-wrap">
@@ -426,16 +426,12 @@
                                         <label for="comment" class="form-field-label">Комментарий</label>
                                         <textarea name="comment" id="comment" rows="6" placeholder="Введите коментарий" class="form-field-textarea"></textarea>
                                 </div>
-                                        <div class="checkbox-wrap">
-                                        <label class="checkbox-label">
-                                                <input type="checkbox" class="checkbox">
-                                                <span>Соглашаюсь с рассылкой и принимаю </span>
-                                                <a href="" class="link">Условия договора</a>
-                                                </label>
-                                        </div>
                                         
-                                
-                                
+                                        <label class="checkbox-label">
+                                                <input type="checkbox" class="checkbox-input visually-hidden" checked>
+                                                <span class="check-icon"></span>Соглашаюсь с рассылкой и принимаю
+                                                <a href="" class="check-link">Условия договора</a>
+                                                </label>
                                 <button type="submit" class="button btn-submit">Отправить</button>
                        </form>
                </div>
