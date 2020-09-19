@@ -645,6 +645,9 @@ color: var(--main-color);
   padding-top: 15px;
   padding-bottom: 15px;
   margin-right: 12px;
+
+  color: var(--main-color);
+
   background-color: var(--footer-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
